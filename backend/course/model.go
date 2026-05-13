@@ -16,6 +16,7 @@ type Course struct {
 	Instructor Instructor      `bson:"instructor"    json:"instructor"`
 }
 
+// Instructor = nested struct ที่อยู่ใน Course
 type Instructor struct {
 	Name  string `bson:"name"  json:"name"`
 	Email string `bson:"email" json:"email"`
